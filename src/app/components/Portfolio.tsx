@@ -67,7 +67,7 @@ export default function Portfolio() {
               &#125;;
             </div>
             <p className="text-xl text-gray-300 mb-8 font-mono">
-              <span className="text-blue-400">function</span> <span className="text-purple-400">getRole</span>() =&gt; <span className="text-green-400">"Mobile App Developer"</span>
+              <span className="text-blue-400">function</span> <span className="text-purple-400">getRole</span>() =&gt; <span className="text-green-400">&quot;Mobile App Developer&quot;</span>
             </p>
           </motion.div>
           <motion.div 
@@ -266,7 +266,7 @@ export default function Portfolio() {
               >
                 <div className="font-mono text-green-400 mb-2">console.log(testimonial[{index}]);</div>
                 <p className="text-gray-300 italic">&quot;{testimonial.text}&quot;</p>
-                <p className="text-gray-400 mt-2 font-mono">// {testimonial.author}</p>
+                <p className="text-gray-400 mt-2 font-mono">{`// ${testimonial.author}`}</p>
               </motion.div>
             ))}
           </div>
@@ -301,7 +301,7 @@ export default function Portfolio() {
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-800/50 to-gray-800/50 backdrop-blur-sm rounded-lg border border-pink-500/20"></div>
                   <span className="relative z-10 font-mono">
                     <span className="text-pink-400">skills[{index}] = </span>
-                    <span className="text-green-400">"{skill}"</span>
+                    <span className="text-green-400">&quot;{skill}&quot;</span>
                   </span>
                 </motion.div>
               ))}
@@ -329,7 +329,7 @@ export default function Portfolio() {
             <p className="text-xl text-gray-300 mb-8 font-mono">
               <span className="text-blue-400">async function</span> <span className="text-purple-400">connect</span>() &#123;
               <br />
-              &nbsp;&nbsp;<span className="text-green-400">// I&#39;m always open to discussing new projects and opportunities</span>
+              &nbsp;&nbsp;{`// I'm always open to discussing new projects and opportunities`}
               <br />
               &nbsp;&nbsp;<span className="text-blue-400">await</span> <span className="text-purple-400">sendMessage</span>();
               <br />
