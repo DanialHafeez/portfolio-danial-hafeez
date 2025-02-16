@@ -60,11 +60,11 @@ export default function Portfolio() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <div className="font-mono mb-4">
-              <span className="text-blue-400">const</span> <span className="text-purple-400">developer</span> = {"{"}
+              <span className="text-blue-400">const</span> <span className="text-purple-400">developer</span> = &#123;
               <h1 className="text-6xl font-bold my-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text inline-block">
                 M.Danial Hafeez
               </h1>
-              {"}"};
+              &#125;;
             </div>
             <p className="text-xl text-gray-300 mb-8 font-mono">
               <span className="text-blue-400">function</span> <span className="text-purple-400">getRole</span>() =&gt; <span className="text-green-400">"Mobile App Developer"</span>
@@ -120,13 +120,13 @@ export default function Portfolio() {
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-500/20">
             <p className="text-xl text-gray-300 leading-relaxed font-mono">
               <span className="text-blue-400">if</span> (
-              <span className="text-purple-400">youWantToKnow</span>) {"{"}
+              <span className="text-purple-400">youWantToKnow</span>) &#123;
               <br />
-              &nbsp;&nbsp;Hi, I&apos;m a passionate Computer Science graduate,
+              &nbsp;&nbsp;Hi, I&#39;m a passionate Computer Science graduate,
               <br />
               &nbsp;&nbsp;driven by innovation and a love for solving complex problems through code
               <br />
-              {"}"};
+              &#125;;
             </p>
           </div>
         </motion.div>
@@ -154,7 +154,7 @@ export default function Portfolio() {
               className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-blue-500/20"
             >
               <h3 className="text-2xl font-semibold mb-4 text-blue-400 font-mono">
-                <span className="text-purple-400">class</span> ARNavigation {"{"}
+                <span className="text-purple-400">class</span> ARNavigation &#123;
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 Navigating complex indoor environments can be challenging, 
@@ -167,7 +167,7 @@ export default function Portfolio() {
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm font-mono">Flutter</span>
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm font-mono">AR</span>
               </div>
-              <div className="text-blue-400 mt-2 font-mono">{"}"}</div>
+              <div className="text-blue-400 mt-2 font-mono">&#125;</div>
             </motion.div>
 
             <motion.div 
@@ -175,7 +175,7 @@ export default function Portfolio() {
               className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-purple-500/20"
             >
               <h3 className="text-2xl font-semibold mb-4 text-purple-400 font-mono">
-                <span className="text-purple-400">class</span> AIChatbot {"{"}
+                <span className="text-purple-400">class</span> AIChatbot &#123;
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 This chatbot uses GPT-based NLP models to handle common customer queries. 
@@ -187,7 +187,7 @@ export default function Portfolio() {
                 <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-mono">Python</span>
                 <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-mono">AI/ML</span>
               </div>
-              <div className="text-purple-400 mt-2 font-mono">{"}"}</div>
+              <div className="text-purple-400 mt-2 font-mono">&#125;</div>
             </motion.div>
 
             <motion.div 
@@ -195,7 +195,7 @@ export default function Portfolio() {
               className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-green-500/20"
             >
               <h3 className="text-2xl font-semibold mb-4 text-green-400 font-mono">
-                <span className="text-purple-400">class</span> SecureFileEncryption {"{"}
+                <span className="text-purple-400">class</span> SecureFileEncryption &#123;
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 A robust C++ application that provides military-grade file encryption using AES-256. 
@@ -208,7 +208,7 @@ export default function Portfolio() {
                 <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm font-mono">OpenSSL</span>
                 <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm font-mono">Crypto++</span>
               </div>
-              <div className="text-green-400 mt-2 font-mono">{"}"}</div>
+              <div className="text-green-400 mt-2 font-mono">&#125;</div>
             </motion.div>
 
             <motion.div 
@@ -216,7 +216,7 @@ export default function Portfolio() {
               className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-pink-500/20"
             >
               <h3 className="text-2xl font-semibold mb-4 text-pink-400 font-mono">
-                <span className="text-purple-400">class</span> SmartExpenseTracker {"{"}
+                <span className="text-purple-400">class</span> SmartExpenseTracker &#123;
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 A comprehensive web-based expense tracking system built with Spring Boot and MySQL. 
@@ -230,7 +230,7 @@ export default function Portfolio() {
                 <span className="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm font-mono">MySQL</span>
                 <span className="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm font-mono">React</span>
               </div>
-              <div className="text-pink-400 mt-2 font-mono">{"}"}</div>
+              <div className="text-pink-400 mt-2 font-mono">&#125;</div>
             </motion.div>
           </div>
         </div>
@@ -290,7 +290,7 @@ export default function Portfolio() {
             <span className="text-pink-400">/&gt;</span>
           </h2>
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-pink-500/20">
-            <div className="font-mono text-pink-400 mb-4">const skills = {"{"};</div>
+            <div className="font-mono text-pink-400 mb-4">const skills = &#123;;</div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {["JavaScript", "React", "Next.js", "Node.js", "Python", "Flutter", "Tailwind CSS", "Git" ,"Dart", "Firebase", "c++", "Java", "Spring Boot", "MySQL"].map((skill, index) => (
                 <motion.div
@@ -306,7 +306,7 @@ export default function Portfolio() {
                 </motion.div>
               ))}
             </div>
-            <div className="font-mono text-pink-400 mt-4">{"}"}</div>
+            <div className="font-mono text-pink-400 mt-4">&#125;</div>
           </div>
         </div>
       </motion.section>
@@ -327,13 +327,13 @@ export default function Portfolio() {
           </h2>
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-500/20">
             <p className="text-xl text-gray-300 mb-8 font-mono">
-              <span className="text-blue-400">async function</span> <span className="text-purple-400">connect</span>() {"{"}
+              <span className="text-blue-400">async function</span> <span className="text-purple-400">connect</span>() &#123;
               <br />
-              &nbsp;&nbsp;<span className="text-green-400">// I&apos;m always open to discussing new projects and opportunities</span>
+              &nbsp;&nbsp;<span className="text-green-400">// I&#39;m always open to discussing new projects and opportunities</span>
               <br />
               &nbsp;&nbsp;<span className="text-blue-400">await</span> <span className="text-purple-400">sendMessage</span>();
               <br />
-              {"}"}
+              &#125;
             </p>
             <motion.a
               whileHover={{ scale: 1.05 }}
