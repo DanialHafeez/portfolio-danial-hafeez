@@ -3,19 +3,137 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --font-geist-sans: Arial, Helvetica, sans-serif;
+  --font-geist-mono: monospace;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+  font-family: var(--font-geist-sans);
+}
+
+/* Matrix background effect */
+.matrix-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.matrix-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(18, 16, 16, 0.9) 50%, rgba(0, 0, 0, 0.9) 50%);
+  background-size: 100% 4px;
+  z-index: 0;
+}
+
+/* Binary background */
+.binary-bg {
+  position: relative;
+}
+
+.binary-bg::before {
+  content: "01";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  font-family: var(--font-geist-mono);
+  font-size: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  text-align: center;
+  transform: rotate(45deg);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  animation: binary 3s infinite;
+}
+
+@keyframes binary {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+/* Code pattern background */
+.code-pattern {
+  position: relative;
+}
+
+.code-pattern::before {
+  content: "{ } < > ( ) ; :";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  font-family: var(--font-geist-mono);
+  font-size: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+  text-align: center;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* Gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+.cursor::after {
+  content: "|";
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-start-rgb: 10, 10, 10;
+    --background-end-rgb: 10, 10, 10;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
