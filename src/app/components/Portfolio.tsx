@@ -189,6 +189,26 @@ export default function Portfolio() {
               </div>
               <div className="text-purple-400 mt-2 font-mono">&#125;</div>
             </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.03 }}
+              className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-purple-500/20"
+            >
+              <h3 className="text-2xl font-semibold mb-4 text-purple-400 font-mono">
+                <span className="text-purple-400">class</span> MARBLE WEBSITE  &#123;
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Designed and developed a modern e-commerce website for a marble and stone business. 
+                The platform showcases a wide range of marble products with high-quality visuals, detailed specifications, and category-based browsing. 
+                Built with a focus on clean UI/UX, the website ensures easy navigation for customers, smooth product inquiries, and mobile responsiveness. 
+                Integrated features include a product catalog, contact forms, and search optimization to enhance online visibility. 
+                This project highlights my skills in front-end development, responsive design, and creating industry-specific digital solutions..
+              </p>
+              <div className="mt-4 flex gap-2">
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-mono">Python</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-mono">AI/ML</span>
+              </div>
+              <div className="text-purple-400 mt-2 font-mono">&#125;</div>
+            </motion.div>
 
             <motion.div 
               whileHover={{ scale: 1.03 }}
